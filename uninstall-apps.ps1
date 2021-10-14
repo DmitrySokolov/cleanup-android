@@ -14,7 +14,7 @@ function uninstall($package)
         Write-Host "  pm disable-user --user 0 $package"
         & $adb shell pm disable-user --user 0 $package | %{ Write-Host "    $_"}
     }
-    catch   {
+    catch {
         Write-Host "  $($Error[0].ToString())" -ForegroundColor Red
     }
 }

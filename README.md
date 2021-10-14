@@ -13,10 +13,10 @@ Download [Command line tools only](https://developer.android.com/studio#download
 sdkmanager.bat --install "platform-tools" "extras;google;usb_drive"
 ```
 
-Then setup the environment variable `ANDROID_SDK_ROOT` to `adb` executable:
+Then setup the environment variable `ANDROID_SDK_ROOT`:
 
 ```
-setx ANDROID_SDK_ROOT <path to adb.exe here>
+setx ANDROID_SDK_ROOT <path to the folder that contains 'platform-tools'>
 ```
 
 
