@@ -85,10 +85,28 @@ com.realmecomm.app                          # Комьюнити (форум)
 #com.coloros.activation                     # Пункт в меню о гарантийном талоне
 #com.coloros.gamespace                      # Игровой центр, если не записываете игры, то смысла в нем нет, игры и без него отлично идут, а уведомления можно заблокировать и стандартными средствами
 
+#  Xiaomi
+com.facemoji.lite.xiaomi
+com.mi.global.bbs
+com.mi.global.shop
+com.mi.globalbrowser
+com.micredit.in
+com.mipay.wallet.in
+com.miui.notes
+com.miui.phrase
+com.miui.videoplayer
+com.miui.yellowpage
+com.xiaomi.calendar
+com.xiaomi.glgm
+com.xiaomi.midrop
+com.xiaomi.mipicks
+com.xiaomi.payment
+
 #  Telemetry
 com.nearme.statistics.rom                   # Участие в тестировании, постоянно висит в памяти, сбор информации с телефона и отправка её разработчикам
 com.trustonic.teeservice                    # Сервис "левой" компании, занимающейся защитой сбором информации
 com.tencent.soter.soterserver               # Еще один китайский партнер, с кем тоже надо поделится информацией. К играм отношения не имеет
+com.miui.analytics
 
 #  Other
 com.opera.preinstall                        # Приблуда от Opera, активность не замечена, но и пользы никакой
