@@ -28,4 +28,4 @@ Connect a device to PC, and select `Transfer files` mode in a popup on a device.
 
 Run `get-apps.ps1` to get all installed apps (will be in `app_list.txt`).
 
-Adjust the list of uninstalling apps in `uninstall-apps.ps1` and run.
+Adjust the list of apps to uninstall in `uninstall-apps.ps1` and run.
