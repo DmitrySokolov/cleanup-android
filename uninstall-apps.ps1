@@ -1,6 +1,6 @@
 ﻿$adb = "$Env:ANDROID_SDK_ROOT\platform-tools\adb"
 
-function uninstall($package)
+function uninstall_pkg($package)
 {
     Write-Host Uninstallng $package
     try {
@@ -196,6 +196,6 @@ com.vinternete.photoeffects                 # Photo Editor Filter & Beauty Effec
     if ($_ -match '^\s*#  |^\s*$') {
         Write-Host $_ -ForegroundColor Green
     } elseif ($_ -match '^\s*([^ #]+)') {
-        uninstall $Matches[1]
+        uninstall_pkg $Matches[1]
     }
 }

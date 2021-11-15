@@ -1,9 +1,21 @@
-# cleanup-android
+cleanup-android
+===============
 
 Removes Android bloatware.
 
+This script will uninstall apps using the command:
+```
+adb shell pm uninstall --user 0 $pkgID
+```
 
-## Requires
+If it is failed, it will attempt to disable an app:
+```
+adb shell pm disable-user --user 0 $pkgID
+```
+
+
+Requires
+--------
 
 Android SDK platform tools (adb).
 
@@ -20,7 +32,8 @@ setx ANDROID_SDK_ROOT <path to the folder that contains 'platform-tools'>
 ```
 
 
-## Use
+Use
+---
 
 Turn on [Developer Mode](https://developer.android.com/studio/debug/dev-options) on a device.
 
