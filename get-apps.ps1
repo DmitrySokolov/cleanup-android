@@ -1,1 +1,4 @@
-﻿& $Env:ANDROID_SDK_ROOT\platform-tools\adb shell pm list packages -f | %{ $_ -replace '^package:(([^=]+?)(?:(:?==([^=]+))?==([^=]+))?)=([^=\r\n]+)$',"`$6    `$1" } | sort | Out-File .\app_list.txt
+﻿& $Env:ANDROID_SDK_ROOT\platform-tools\adb shell pm list packages -f `
+| ForEach-Object { $_ -replace '^package:(([^=]+?)(?:(:?==([^=]+))?==([^=]+))?)=([^=\r\n]+)$',"`$6    `$1" } `
+| Sort-Object `
+| Out-File .\app_list.txt -Encoding utf8
